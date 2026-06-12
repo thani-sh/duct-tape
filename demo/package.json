@@ -1,0 +1,12 @@
+{
+  "name": "duct-tape-demo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot server.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^2.8.0",
+    "@thani-sh/duct-tape": "link:@thani-sh/duct-tape"
+  }
+}

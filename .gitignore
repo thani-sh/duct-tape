@@ -5,6 +5,7 @@ node_modules
 out
 dist
 build
+demo/public/
 *.tgz
 
 # code coverage
