@@ -1,0 +1,32 @@
+{
+  "name": "@thani-sh/duct-tape",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --write .",
+    "test": "bun test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:thani-sh/duct-tape.git"
+  },
+  "peerDependencies": {
+    "typescript": "^6"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "latest",
+    "prettier": "^3.8.4",
+    "typescript": "^6.0.3"
+  }
+}
