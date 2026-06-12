@@ -1,5 +1,5 @@
 export { compileCodeToFunction, NodeVMSandbox } from "./sandbox.js";
-export { runSelfHealingLoop, cleanCode, SelfHealingLoop } from "./healer.js";
+export { cleanCode, SelfHealingLoop } from "./healer.js";
 export type {
   CodeExecutor,
   LLMAdapter,

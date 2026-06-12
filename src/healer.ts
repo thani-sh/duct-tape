@@ -160,13 +160,4 @@ export class SelfHealingLoop<TContext = unknown> {
   }
 }
 
-/**
- * runSelfHealingLoop compiles code, runs it in a developer-defined sandbox, and heals it iteratively via the LLM.
- */
-export async function runSelfHealingLoop<TContext = unknown>(
-  initialPrompt: string,
-  options: SelfHealingOptions<TContext>,
-): Promise<{ success: boolean; finalCode: string; error?: string }> {
-  const loop = new SelfHealingLoop(options.llm, options.executor, options);
-  return loop.run(initialPrompt);
-}
+

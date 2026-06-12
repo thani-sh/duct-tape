@@ -104,14 +104,6 @@ The main class that manages the generation, execution, and correction feedback l
   - Executes the self-healing feedback loop starting with the initial prompt.
   - Returns `Promise<{ success: boolean; finalCode: string; error?: string }>`
 
-#### `runSelfHealingLoop<TContext = unknown>(initialPrompt, options)`
-
-A convenient functional wrapper around `SelfHealingLoop`.
-
-- `initialPrompt`: `string`
-- `options`: `SelfHealingOptions<TContext>`
-- Returns `Promise<{ success: boolean; finalCode: string; error?: string }>`
-
 ---
 
 ### Executing & Sandboxing
