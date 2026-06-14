@@ -14,7 +14,12 @@ Project status: early development (breaking changes are acceptable)
 
 ## Version Control
 
+- **ALWAYS** ask whether to use a worktree or not unless explicitly told somehow.
+- **ALWAYS** perform the following cleanup steps after the user verifies the task is done:
+  - Rebase and merge the branch to `main`.
+  - Remove the git worktree and any other temporary files.
 - **NEVER** commit without explicit user approval after they have tested and verified.
+- **NEVER** create merge commits, rebase instead. Keep the history linear.
 - **STRICTLY** follow **Conventional Commits** for commit messages.
   - **ALWAYS** add a `type` and a short `description` to the commit message.
   - **NEVER** use scopes in commit messages.
